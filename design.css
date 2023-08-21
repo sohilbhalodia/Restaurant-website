@@ -1,0 +1,333 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-color: lightyellow;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Start header Design */
+.clHeader{
+    min-height: 15vh;
+    max-height: fit-content;
+    width: auto;
+    margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+    /*box-shadow: inset 0 0 0.5rem rgb(0, 0, 0, 0.1);*/
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    height: 10rem;
+    width: 90%;
+    object-fit: contain;
+}
+
+/* End header design */
+
+/* Start Navigation footer design*/
+.clNav{
+    min-height: 5vh;
+    max-height: fit-content;
+    width: auto;
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    box-shadow: inset 0 0 0.5rem rgb(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgoldenrodyellow;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 10rem;
+    font-style: italic;
+    font-family: cursive;
+}
+
+nav li:hover{
+    border-radius: 10%;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+/* Navigation design*/
+
+/* Start Main contain design */
+.clMain{
+    width: 100%;
+    min-height: 70vh;
+    max-height: fit-content;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* End main contain design */
+
+/* Start Promation banner design*/
+.clPromotionDisplay{
+    min-height: 25vh;
+    max-height: fit-content;
+    width: auto;
+    margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+    /*box-shadow: inset 0 0 0.5rem rgb(0, 0, 0, 0.1);*/
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.clPromotionDisplay img{
+    position: absolute;
+    height: 25vh;
+    width: 99%;
+    border-radius: 1rem;
+    object-fit: cover;
+    background-image: url(Beet-Salad-2.jpg);
+    animation: 50s ease 5s infinite running promationdisplay;
+}
+
+@keyframes promationdisplay {
+    0%{
+        background-image: url(greekfood.jpg);
+    }
+    50%{
+        background-image: url(Antipasto-board.jpg);
+    }
+}
+
+
+.clPromotionDisplay p{
+    position: relative;
+    display: inline-block;
+    align-items: start;
+    justify-content: left;
+    color: lightgray;
+}
+
+.clDiscountDisplay{
+    font-size: x-large;
+}
+
+/* End promation banner design */
+
+/* Start Main Contain design */
+.clMainContain{
+    min-height: 45vh;
+    max-height: max-content;
+    width: auto;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0.2rem 0.5rem 0.1rem 0.5rem;
+    /*box-shadow: inset 0 0 0.5rem rgb(0, 0, 0, 0.1);*/
+    border-radius: 1rem;
+}
+/*End main contain design*/
+
+/*Start Home page design*/
+.clHomePage{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content:space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.clHomePageOtherInfo{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0.5rem rgb(0, 0, 0, 0.1);
+    background-color: lightgoldenrodyellow;
+    border-radius: 1rem;
+}
+
+.clHomePageOtherInfo img{
+    height: 15rem;
+    object-fit: cover;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.clHompePageOtherInfoHeading{
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.clHomepageLink:hover{
+    cursor: pointer;
+}
+/*End home page design*/
+
+/*vStart Menu page design */
+#idMenuPage{
+    height: max-content;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    display: none;
+}
+
+.clMenuList{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    
+}
+
+.clMenuDesign{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+.clMenuHeader{
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.clMenuingredients{
+    font-family: cursive;
+    font-size: medium;
+    font-style: italic;
+}
+
+/*End Menu page Design */
+
+/* Start Book page design */
+
+#idBookTableDesign{
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+}
+
+#idBookingForm{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    box-shadow: inset 0 0 0.5rem rgb(0, 0, 0, 0.1);
+    background-color: lightgoldenrodyellow;
+}
+
+.clFormDesign{
+    margin-top: 1rem;
+}
+
+.clsubmitbutton{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.clBookTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+#idBookingMessage{
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 20rem;
+}
+
+/* End book page design*/
+
+/* Start About and contact page design*/
+.claboutandcontact{
+    display: none;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#idAboutP{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+#idAboutmessage{
+    margin-top: 5rem;
+}
+
+.idContactAddress{
+    text-align: center;
+}
+
+/* Start Footer design */
+.clFooterDesign{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clFooterLogo{
+    display: flex;
+    width: 30%;
+    height: 5vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clFooterLogo img{
+    height: 5vh;
+}
+
+/* End footer design */
+
+
+
